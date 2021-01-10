@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+  <!--Hi! Welcome to my source code. Bear with me here as I am still learning :)-->
+
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="images/profile.jpg"/>
-  <title>React - Freelancers and Agencies One Page Portfolio Template</title>
-  <meta name="description" content="">
-  <meta name="author" content="Syed Danial Munsif">
-  <meta name="keywords" content="React, Landing page, Portfolio template, Bootstrap template, Responsive html5 template">
-  <link rel="stylesheet" href="./css/cyan.min.css" id="css-main">
-  <script src="https://use.fontawesome.com/e65fc10c49.js"></script>
+  <!--Links below for favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets//apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <title>Alex Fuss - SEO Guy and Full-Stack Web Developer / Designer</title>
+  <meta name="description" content="Full stack developer and SEO professional, passionate about technical SEO and all things web dev.">
+  <link rel="stylesheet" href="./css/unmin.cyan.css" id="css-cyan">
 
     </head>
     <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -32,7 +37,6 @@
           <ul class="nav nav-pills menu-center margin-top-30 scroll-nav">
             <li role="presentation" class="active"><a href="#home"><i class="fa fa-home"></i></a></li>
             <li role="presentation"><a href="#portfolio">Portfolio</a></li>
-            <li role="presentation"><a href="#reviews">Reviews</a></li>
             <li role="presentation"><a href="#about_me">About</a></li>
             <li role="presentation"><a href="#expertness">Services</a></li>
             <li role="presentation"><a href="#contact_me">Contact</a></li>
@@ -40,7 +44,18 @@
           <!-- main menu end -->
           <img src="./images/Avatar-Maker.svg" class="margin-top-76 img-circle center-block profile_picture" alt="profile picture">
           <h1 class="text-capitalize text-center">Alex Fuss</h1>
-          <h3 class="text-capitalize text-center">UX/UI designer</h3>
+            <br>
+            <section class="rw-wrapper">
+              <h2 class="rw-sentence">
+                <div class="rw-words rw-words-1">
+                  <span>Tech SEO Expert</span>
+                  <span>Full-Stack Developer</span>
+                  <span>Big Data Nerd</span>
+                </div>
+              </h2>
+            </section>
+
+        </div>
           <hr/>
           <div class="text-center margin-bottom-135">
             <ul class="social-networks spin-icon">
@@ -62,16 +77,16 @@
                   <a href="javascript:void(0)" id="all" class="btn" data-mixitup-control data-filter="all">All</a>
                 </li>
                 <li role="presentation">
+                  <a href="javascript:void(0)" class="btn" data-mixitup-control data-filter=".mern">MERN</a>
+                </li>
+                <li role="presentation">
                   <a href="javascript:void(0)" class="btn" data-mixitup-control data-filter=".react">React</a>
                 </li>
                 <li role="presentation">
                   <a href="javascript:void(0)" class="btn" data-mixitup-control data-filter=".node">Node.js</a>
                 </li>
                 <li role="presentation">
-                  <a href="javascript:void(0)" class="btn" data-mixitup-control data-filter=".ios">iOS</a>
-                </li>
-                <li role="presentation">
-                  <a href="javascript:void(0)" class="btn" data-mixitup-control data-filter=".desktop">Desktop</a>
+                  <a href="javascript:void(0)" class="btn" data-mixitup-control data-filter=".app">App</a>
                 </li>
               </ul>
               <!-- filter btn end-->
@@ -79,38 +94,38 @@
             <!-- mixitup container -->
             <div class="row" id="mix-wrapper">
               <div id="effect-5">
-                <div class="col-md-4 col-sm-6 col-xs-6 mix-target web" data-order="1">
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target mern" data-order="1">
                   <figure>
-                    <img src="images/portfolio/port1.jpg" alt="">
+                    <img src="./images/library.jpg" alt="library">
                     <figcaption>
-                      <a href="#" data-toggle="modal" data-target="#myModal">
-                        <h3>Mojo Web App redesign concept</h3>
+                      <a href="https://google-books-seach-app.herokuapp.com/" target="_blank">
+                        <h3>Google Books Search</h3>
                         <hr>                      
-                        <p>Branding , Development</p>
+                        <p>This is a MERN stack application meant to help users quickly search through Google books and add books to a saved list for quick access.</p>
                       </a>
                     </figcaption>
                   </figure>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 mix-target web" data-order="2">
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target react" data-order="2">
                   <figure>
-                    <img src="images/portfolio/port2.jpg" alt="">
+                    <img src="./images/list.jpg" alt="list of names and info">
                     <figcaption>
-                      <a href="#" data-toggle="modal" data-target="#myModal">
-                        <h3>Mojo Web App redesign concept</h3>
+                      <a href="https://alexfuss.github.io/react-employee-directory/" target="_blank">
+                        <h3>React Employee Directory</h3>
                         <hr>
-                        <p>Branding , Development</p>                      
+                        <p>A helpful way to view an entire employee directory built with React</p>                      
                       </a>                      
                     </figcaption>
                   </figure>
                 </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 mix-target android" data-order="3">
+                <div class="col-md-4 col-sm-6 col-xs-6 mix-target app" data-order="3">
                   <figure>
-                    <img src="images/portfolio/port1.jpg" alt="">
+                    <img src="./images/fitness-tracker.png" alt="fitness app">
                     <figcaption>
-                      <a href="#" data-toggle="modal" data-target="#myModal">
-                        <h3>Mojo Web App redesign concept</h3>
+                      <a href="https://nosql-workout-app.herokuapp.com/" target="_blank">
+                        <h3>Fitness Tracker</h3>
                         <hr> 
-                        <p>Branding , Development</p>                     
+                        <p>A simple fitness tracking application built with a Mongo database</p>                     
                       </a>                      
                     </figcaption>
                   </figure>
@@ -260,33 +275,6 @@
             </div>
             <div class="col-sm-4 col-xs-6">
               <div class="block">
-                <i class="fa fa-magic fa-3x"></i>
-                <h4 class="text-uppercase">UX/UI Design</h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                </p>
-              </div> 
-            </div>
-            <div class="col-sm-4 col-xs-6">
-              <div class="block">
-                <i class="fa fa-camera fa-3x"></i>
-                <h4 class="text-uppercase">Photography</h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                </p>
-              </div> 
-            </div>
-            <div class="col-sm-4 col-xs-6">
-              <div class="block">
-                <i class="fa fa-lightbulb-o fa-3x"></i>
-                <h4 class="text-uppercase">brand identity</h4>
-                <p>
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                </p>
-              </div> 
-            </div>
-            <div class="col-sm-4 col-xs-6">
-              <div class="block">
                 <i class="fa fa-user-secret fa-3x"></i>
                 <h4 class="text-uppercase">analytics</h4>
                 <p>
@@ -297,7 +285,7 @@
           </div>
         </section>
       </section>
-      <section class="container" id="hire_me"> 
+      <!-- <section class="container" id="hire_me"> 
         <div class="row">
           <div class="col-sm-12 text-center">
             <h3>Need Any Help?</h3>
@@ -308,7 +296,7 @@
             </nav>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="container-fluid sdm-bg" id="contact_me">
         <div class="row">
           <div class="overlay"></div>
@@ -321,7 +309,7 @@
         <div class="row">
           <section class="col-sm-10 col-sm-offset-1">
 
-            <div class="row text-center">
+           <!--<div class="row text-center">
               <div class="col-sm-4 col-xs-12">
                 <div class="block">
                   <i class="fa fa-envelope fa-2x"></i>
@@ -352,7 +340,7 @@
                   </ul>
                 </div> 
               </div>
-            </div>
+            </div> -->
             <form action="" class="row">
               <div class="col-sm-6 col-xs-12">
                <div class="form-group">
@@ -360,7 +348,7 @@
                  <input type="text" class="form-control" id="your_name" placeholder="Write Your Name">
                </div>
                <div class="form-group">
-                <label for="your_email">Password</label>
+                <label for="your_email">Your Email</label>
                 <input type="email" class="form-control" id="your_email" placeholder="Enter Your Email">
               </div>
             </div>
@@ -375,21 +363,22 @@
               <button type="submit" class="btn btn-orange">Send Message</button>
             </div>
           </form>
-
+          <section class="footer">
           <div class="text-center row">
             <div class="col-sm-12">
-              <ul class="social-networks spin-icon">
+              <!-- <ul class="social-networks spin-icon">
                 <li><a href="https://www.facebook.com/" class="icon-facebook">Facebook</a></li>
                 <li><a href="https://twitter.com/" class="icon-twitter">Twitter</a></li>
                 <li><a href="https://www.linkedin.com/" class="icon-linkedin">LinkedIn</a></li>
                 <li><a href="https://pinterest.com" class="icon-pinterest">Pinterest</a></li>
                 <li><a href="https://instagram.com" class="icon-instagram">Instagram</a></li>
-              </ul>
-              <p class="text-center margin-top-30">
-               &copy Copyright 2017 <a href="#">REACT Portfolio Template </a> 
+              </ul>-->
+              <p class="text-center margin-top-30 copyright">
+               &copy Copyright AF 2020 <a href="#"></a> 
              </p>
            </div>
          </div>
+        </section>
        </section>
      </div>
    </section>
@@ -409,6 +398,7 @@
     </div>
   </div>
   <!-- Modal end -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script src="./js/main.min.js"></script>
   <!-- Remove color switcher -->
   <script>
@@ -425,5 +415,6 @@
     });
   </script>
   <!-- Remove Color swither end -->
+  <script src="https://use.fontawesome.com/e65fc10c49.js"></script>
 </body>
 </html>
